@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Mi primera Web</title> <!-- este es el titulo
+    que aparece en la pagina web --> 
+    <style> 
+        table, th, td {
+            border: 1px solid blue;
+        }
+    </style> <!--esto sirve para darle bordes a nuestra tabla-->
+</head>
+<body>
+
+    <table style="width: 300px;">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th> <!-- esto es el titulo de cada columna-->
+        </tr>
+        <tr>
+            <td>Jabón</td>
+            <td>gratis</td> <!-- esto serían las filas, o lo que va abajo de cada columna-->
+        </tr>
+        <tr>
+            <td>Cepillo</td>
+            <td>Q19.90</td> <!-- esto serían las filas, o lo que va abajo de cada columna-->
+        </tr>
+        <tr>
+            <td>Chanchito feliz muy feliz</td>
+            <td>Q39.90</td> <!-- esto serían las filas, o lo que va abajo de cada columna-->
+        </tr>
+        <tfood>
+            <td></td>
+            <td>Total: Q59.8</td>
+        </tfood>
+    </table>
+
+    <!-- ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+    </ul>
+
+    <!-- ol es lista ordenada-->
+    <ol>
+        <li value="10">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+
+    </ol>
+
+
+
+
+    <!--la propiedad action nos sirve para enviar la información que el usuario ingreso
+    metodos get muestra la informacion que el usuario ingreso, post no muestra nada-->
+    <form action = "/formulario" method ="post">
+        <!-- label e input, me sirven para mostrar y obtener informacción
+        con label muestro que quiero que el usuario ingrese
+        y con input obtengo lo que el usuario ingrese
+         con for hago que el usuario al darle clic en la etiqueta nombre lo ponga automaticamente en el rectangulo del nomre
+        pero debo pasarle en input la propiedad de id para que esto suceda-->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Kenny"/>
+        <!--propiedad name sirve para identificar lo que ingresa el usuario
+        la propiedad placeholder sirve para dar un ejemplo de que es lo que va a ingresar el usuario
+        y la propiedad de type sirve para volver al input ya sea texto, un boton, una contraseña, un email
+        type = "text", "submit/ boton", "email/gmail" "password/contraseña", "radio/boton r", "checkbox", "file/poder subir un archivo"-->
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Salazar"/>
+        <br> <!--Salto de linea-->
+        <label for="comentario">Comentario</label>
+        <br>
+        <!-- el for y el id van juntos-->
+        <!--la etiqueta text area nos sirve para que el usuario ingrese comentarios o texto que el  quiera escribir--> 
+        <textarea cols="50" rows="10" id="comentario" placeholder="Escribir comentario" name="comentario"></textarea>
+        <br>
+        <button type="button"><img src="img/pistaAterrizaje.png" width="50"/>Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <!-- estos h1, h2, h3, ect sirven para dar titulos y subtitulos a las paginas-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2> 
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>CHANCHITO</h6>
+    <!--P es para hacer parrafos dentro de la pagina-->
+    <p>Chanhito feliz esta muy feliz</p>
+    <p>Chanhito triste esta muy triste</p>
+    <hr> <!-- sirve para separa secciones de nuestra pagina web-->
+    <h2>CANCHITO FELIPE</h2>
+    <p> Este texto es un <span style="color:blue">poco más largo</span> <!-- span sirve para resaltar algun tipo de texto-->
+        y es pra mostrar<br><br> <!--br sirve para dar un salto de linea-->
+        la etiqueta span!.
+    </p> 
+    <!--este es un comentario y no va a 
+    aparecer en nuestro explorador--> 
+
+    <!-- con la etiqueta <a> </a> podemos mandar a una nueva pagina web
+    con href "aquí indicamos el link de la pagina a donde queremos ir
+    y con target hacemos que esa pagina se abra en una nueva pestaña"-->
+    <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <br>
+    <!-- img sireve para mostrar una imagen dentro de la pagina web
+    src = "aquí especificamos la ruta en donde esta la imagen
+    y con width ="aquí le damos una dimensión""-->
+    <img src="img/pistaAterrizaje.png" width="250"/>
+</body>
+</html>

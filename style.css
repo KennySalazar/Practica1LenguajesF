@@ -1,0 +1,61 @@
+#titulo{ /*esto va con el id="titulo*/
+    color:red
+}
+/*El cambiar color o estilo depende de que se ponga primero y de ultimo
+pues lo que se ponga de ultimo es lo que va a tener mayor influencia*/
+p.especial{
+    color:green;
+}
+p.texto{
+    color:yellow
+}
+
+.texto{ /*esto es para una class="texto"*/
+    color:blue;
+}
+
+div p {
+    color:aquamarine;
+}
+div h2, div h3{
+    color:brown;
+}
+
+*{ /*Esto es para seleccionar todo dentro se nuestra página web*/
+    font-size: 24px; /*Cambiar tamaño de la letra*/
+    color:blanchedalmond;
+}
+/*COMENTARIO*/
+
+/*
+.color{
+    color:#eee gris;
+}
+
+.color{
+    color: rgb(255,0,255);
+}
+*/
+.color{
+    /* border: 5px violet outset; */
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+    border-width: 10px;
+}
+
+#fondo{
+    background-color: blueviolet;
+    height: 200px;   
+    background: red url("img/pistaAterrizaje.png") repeat-y center bottom / 100px 100px;
+}
+
+#margen{
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+    border: solid 3px beige;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+}
